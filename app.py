@@ -7,7 +7,7 @@ import pickle
 from streamlit_folium import st_folium
 
 # Model load karo
-with open('crime_model.pkl', 'rb') as f:
+with open('crime_model_small.pkl', 'rb') as f:
     model = pickle.load(f)
 with open('label_encoder.pkl', 'rb') as f:
     le = pickle.load(f)
