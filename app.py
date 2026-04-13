@@ -13,7 +13,7 @@ with open('label_encoder.pkl', 'rb') as f:
     le = pickle.load(f)
 
 # Data load karo
-df = pd.read_csv('Chicago_Crimes_2012_to_2017.csv')
+df = pd.read_csv('chicago_crimes_sample.csv')
 df = df[['Primary Type', 'Latitude', 'Longitude', 'Year']].dropna()
 
 st.title("🗺️ Chicago Crime Hotspot Predictor")
